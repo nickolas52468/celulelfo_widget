@@ -3,12 +3,12 @@
 ### Abaixo tutorial de como instalar
 Partindo da pasta widget;
 Crie um novo widget estatico  HTML/CSS e configure da seguinte forma para que seja exibido coirretamente:
-Size :
-    widdth: 298 px
-    height: 640 px
-Position:
-    Top:  16px
-    Left: 16px
+- Size :
+  - widdth: 298 px
+  - height: 640 px
+- Position:
+  - Top:  16px
+  - Left: 16px
 
 Campos de cada arquivo:
 celulelfo.html  : Campo HTML
