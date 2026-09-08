@@ -68,6 +68,7 @@ function startWidget(fieldData,sessionData) {
 
     index = 'tip-' + (fieldData.eventPeriod || 'session');
     const initialTip = sessionData.data[index] ?? {};
+    console.dir({"initialTip":initialTip});
     initialValue = fieldData.initialValue;
 
     const count = sessionData && initialTip?
@@ -114,7 +115,8 @@ window.addEventListener('onEventReceived', function (obj) {
     if (listener === 'bot:counter' && data.counter === "goal") {
         goal = data.value;
         setGoal();
-        updateBar(count);
+        console.dir(data);
+        // updateBar(count);
     }
 
 });
@@ -122,16 +124,30 @@ window.addEventListener('onEventReceived', function (obj) {
 
 const style = document.createElement('style');
 style.innerHTML = `
-    .sparkle {
-    position: absolute;
+body { /* copiar do style.css */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: transparent; /* Ajuste conforme necessário */
+    --elfo--green:#0ac047;
+    --elfo--purple:#7b2cff;
+    --elfo--purple_gradient: linear-gradient(#7b2cff, #5c00e6);
+    --elfo--green_gradient: linear-gradient(#106c2e, #0ac047);
+    --bg-emote-elfofolove1: url(
+        'https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_1161597862534e0faf7b4865dec7c10c/default/dark/3.0#e=0'
+        ) no-repeat center center / contain;  
+}
+  .sparkle { /* copiar do style.css */
+   position: absolute;
     width: {sparkleSize}px;
     aspect-ratio: 1/1;
     border-radius: 50%;
     background: var(--bg-emote-elfofolove1);
     /* background: var(--elfo--green); */
     opacity: 0;
-    animation: sparkle 2 linear forwards;
-}
+    animation: sparkle 3s linear forwards;
+  }
 
   @keyframes sparkle {
     0% {

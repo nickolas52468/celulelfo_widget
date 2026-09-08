@@ -106,7 +106,7 @@ body {
     background: var(--bg-emote-elfofolove1);
     /* background: var(--elfo--green); */
     opacity: 0;
-    animation: sparkle 2 linear forwards;
+    animation: sparkle 2s linear forwards;
 }
 
 @keyframes sparkle {
