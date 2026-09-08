@@ -1,0 +1,276 @@
+{
+  
+  "minTip": {
+    "type": "number",
+    "label": "Minimum amount of Donation:",
+    "value": 1
+  },
+  "includeCheers": {
+    "type": "dropdown",
+    "label": "Display cheers:",
+    "value": "yes",
+    "options": {
+      "yes": "Yes",
+      "no": "No"
+    }
+  },
+  "minCheer": {
+    "type": "number",
+    "label": "Minimum amount of bits in Cheer:",
+    "value": 1
+  },
+  "textOrder": {
+    "type": "dropdown",
+    "label": "Text order:",
+    "value": "nameFirst",
+    "options": {
+      "nameFirst": "Name first",
+      "actionFirst": "Action first"
+    }
+  },
+  "fadeoutTime": {
+    "type": "number",
+    "label": "Fadeout after action in seconds, 999 to disable:",
+    "value": 999
+  },
+  "fontColor": {
+    "type": "colorpicker",
+    "label": "Font color",
+    "value": "rgb(255, 255, 255)"
+  },
+  "backgroundOpacity": {
+    "type": "number",
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "label": "Texture opacity",
+    "value": 50
+  },
+  "backgroundColor": {
+    "type": "colorpicker",
+    "label": "Background color",
+    "value": "rgb(55, 55, 55)",
+    "group": "Styling"
+  },
+  "iconColor": {
+    "type": "colorpicker",
+    "label": "Icon Color",
+    "value": "rgb(255, 255, 255, 255)"
+  },
+  "overrideCurrency": {
+    "type": "dropdown",
+    "label": "Override currency",
+    "value": "no",
+    "options": {
+      "no": "No",
+      "yes": "Yes"
+    },
+    "group": "Goal & Currency"
+  },
+  "overrideCurrencyCode": {
+    "type": "text",
+    "label": "Currency code (e.g. USD)",
+    "value": "USD",
+    "group": "Goal & Currency"
+  },
+  "onGoalReach": {
+    "type": "dropdown",
+    "label": "On goal reach",
+    "value": "nothing",
+    "options": {
+      "nothing": "Do nothing",
+      "increment": "Increment by value below",
+      "reset": "Reset goal"
+    },
+    "group": "Goal & Currency"
+  },
+  "autoIncrement": {
+    "type": "number",
+    "label": "Auto increment goal when reached by",
+    "value": 0,
+    "group": "Goal & Currency"
+  },
+  "botCounter": {
+    "type": "checkbox",
+    "label": "Use 'goal' bot counter as goal number?",
+    "value": false,
+    "group": "Goal & Currency"
+  },
+  "goal": {
+    "type": "number",
+    "label": "Donate Goal",
+    "value": 200,
+    "group": "Goal Event Settings"
+  },
+  "initialValue": {
+    "type": "number",
+    "label": "Initial value",
+    "value": 0,
+    "group": "Goal Event Settings"
+  },
+  "sparkleSize": {
+    "type": "number",
+    "label": "Sparkle Size",
+    "value": 104,
+    "group": "Styling"
+  },
+  
+  "eventType": {
+    "type": "dropdown",
+    "label": "Pick event type:",
+    "value": "follower",
+    "options": {
+      "follower": "Follower",
+      "subscriber": "Subscriber",
+      "subscriber-new": "Subscriber new (session only)",
+      "subscriber-resub": "Subscriber resub (session only)",
+      "subscriber-gifted": "Subscriber gifted (session only)",
+      "tip": "Tip amount",
+      "cheer": "Bits amount",
+      "subscriber-points": "Subscriber points"
+    },
+    "group": "Goal Event Settings"
+  },
+  "eventPeriod": {
+    "type": "dropdown",
+    "label": "Pick period: (doesn't work with sub points)",
+    "value": "session",
+    "options": {
+      "session": "Session",
+      "week": "Week",
+      "month": "Month",
+      "total": "Total",
+      "goal": "Amount from goal data"
+    },
+    "group": "Goal Event Settings"
+  },
+  "titleText": {
+    "type": "text",
+    "label": "Title text",
+    "value": "Follower goal:",
+    "group": "Text Settings"
+  },
+  "fontName": {
+    "type": "googleFont",
+    "label": "Font name",
+    "value": "Montserrat",
+    "group": "Text Settings"
+  },
+  "shadow": {
+    "type": "text",
+    "label": "Font shadow",
+    "value": "1px 1px 1px #000000",
+    "group": "Text Settings"
+  },
+  "fontWeight": {
+    "label": "Font Weight",
+    "type": "dropdown",
+    "value": "400",
+    "options": {
+      "100": "Thin (100)",
+      "300": "Light (300)",
+      "400": "Regular (400)",
+      "500": "Medium (500)",
+      "700": "Bold (700)",
+      "900": "Black (900)",
+      "group": "Text Settings"
+    },
+    "group": "Text Settings"
+  },
+  "titleColor": {
+    "type": "colorpicker",
+    "label": "Title font color",
+    "value": "rgb(255, 255, 255)",
+    "group": "Text Settings"
+  },
+  "titleSize": {
+    "type": "number",
+    "label": "Title font Size",
+    "value": 24,
+    "group": "Text Settings"
+  },
+  "displayBar": {
+    "type": "dropdown",
+    "label": "Display bar",
+    "value": "block",
+    "options": {
+      "block": "Yes",
+      "none": "No"
+    },
+    "group": "Styling"
+  },
+  "displayLabels": {
+    "type": "dropdown",
+    "label": "Display labels",
+    "value": "block",
+    "options": {
+      "block": "Yes",
+      "none": "No"
+    },
+    "group": "Styling"
+  },
+  "barColor1": {
+    "type": "colorpicker",
+    "label": "Batery bar color",
+    "value": "#0ac047",
+    "group": "Styling"
+  },
+  "barColor2": {
+    "type": "colorpicker",
+    "label": "Batery backgound color",
+    "value": "#333",
+    "group": "Styling"
+  },
+  "divider": {
+    "type": "text",
+    "label": "Divider",
+    "value": "/",
+    "group": "Styling"
+  },
+  "dividerColor": {
+    "type": "colorpicker",
+    "label": "Divider font color",
+    "value": "rgb(255, 255, 255)",
+    "group": "Styling"
+  },
+  "valueColor": {
+    "type": "colorpicker",
+    "label": "Current value font color",
+    "value": "rgb(255, 255, 255)",
+    "group": "Styling"
+  },
+  "goalColor": {
+    "type": "colorpicker",
+    "label": "Goal font color",
+    "value": "rgb(255, 255, 255)",
+    "group": "Styling"
+  },
+  "labelSize": {
+    "type": "number",
+    "label": "Label font Size",
+    "value": 24,
+    "group": "Styling"
+  },
+  "fadeoutAfter": {
+    "type": "number",
+    "label": "Fadeout after (s) - 0 to disable",
+    "value": 0,
+    "group": "Styling"
+  },
+  "widgetName": {
+    "type": "hidden",
+    "value": "Goal Widget"
+  },
+  "widgetAuthor": {
+    "type": "hidden",
+    "value": "lx"
+  },
+  "widgetVersion": {
+    "type": "hidden",
+    "value": "1.0"
+  },
+  "widgetUpdateUrl": {
+    "type": "hidden",
+    "value": "https://github.com/StreamElements/widgets/blob/master/GoalsOverPeriod/"
+  }
+}
